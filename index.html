@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TODO App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/position.css">
+		<link rel="text/javascript" href="./js/main.js">
+	</head>
+	<div class="container">
+		<body>
+			<main>
+				<h1>TODO App!</h1>
+				<h2>Tasks that need finishing:</h2>
+				<aside class="main-chart">
+					<div id="chart">
+						<ul>
+							<li>first item</li>
+						</ul>
+					</div>
+				</aside>
+
+				<fieldset>
+					<legend>Please describe the task you are wanting to accomplish:</legend>
+					<div class="text-box">
+						<form class="" action="index.html" method="post">
+							<!-- <p>Please enter description here:</p> -->
+							<textarea name="task-description" rows="8" cols="80"></textarea>
+						</form>
+					</div>
+					<img src="" alt="">
+				</fieldset>
+				<fieldset>
+					<legend>Please select the assignee:</legend>
+					<div id="assignee-radio-list">
+						<ul>
+							<label><li><input type="radio" class="help" name="assignee" value="johnny">Johnny</li></label>
+							<label><li><input type="radio" class="help" name="assignee" value="jane">Jane</li></label>
+							<label><li><input type="radio" id="ass" name="assignee" value="jessi">Jessi</li></label>
+							<label><li><input type="radio" name="assignee" value="jeremy">Jeremy</li></label>
+							<label><li><input type="radio" name="assignee" value="jackson">Jackson</li></label>
+							<label><li><input type="radio" name="assignee" value="johanna">Johanna</li></label>
+							<label><li><input type="radio" name="assignee" value="jordan">Jordan</li></label>
+							<label><li><input type="radio" name="assignee" value="justice">Justice</li></label>
+							<label><li><input type="radio" name="assignee" value="jimbo">Jimbo</li></label>
+							<label><li><input type="radio" name="assignee" value="johnson">Johnson</li></label>
+							<label><li><input type="radio" name="assignee" value="june">June</li></label>
+							<label><li><input type="radio" name="assignee" value="jedi">Jedi</li></label>
+							<label><li><input type="radio" name="assignee" value="jstalgron">Jstalgron</li></label>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Please select the difficulty of the task:</legend>
+					<div class="difficulty-dropdown">
+						<select class="dropdown" name="task-difficulty-dropdown">
+							<option value="supposedly-easy">--Supposedly Easy.--</option>
+							<option value="simple-yet-challenging">--Simple, yet challenging...--</option>
+							<option value="moderately-hard">--Moderately Hard--</option>
+							<option value="difficult">--Difficult!!!--</option>
+							<option value="near-impossible">--*Near Impossible*--</option>
+						</select>
+					</div>
+				</fieldset>
+				<input id="button" type="submit" value="Submit" onsubmit="addItem(); return false">
+			</main>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		</body>
+	</div>
+
+</html>
